@@ -10,7 +10,7 @@ func main() {
 	pg := New(10)
 	http.HandleFunc("/request", func(w http.ResponseWriter, r *http.Request) {
 		err := pg.Process(func() {
-			w.Write([]byte(doThingsThatsShouldBeLimited()))
+			w.Write([]byte(doThingsThatShouldBeLimited()))
 		})
 		if err != nil {
 			w.WriteHeader(http.StatusTooManyRequests)
@@ -20,7 +20,7 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
-func doThingsThatsShouldBeLimited() string {
+func doThingsThatShouldBeLimited() string {
 	time.Sleep(2 * time.Second)
 	return "done"
 }
