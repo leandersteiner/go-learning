@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package = "./comm";
+
+service Posts {
+  rpc PostCreated (Post) returns (Post);
+  rpc PostDeleted (Post) returns (Post);
+}
+
+message Post {
+  uint64 id = 1;
+  string title = 2;
+  string content = 3;
+}
+
+service Comments {
+  rpc CommentCreated (Comment) returns (Comment);
+  rpc CommentDeleted (Comment) returns (Comment);
+}
+
+message Comment {
+  uint64 id = 1;
+  string content = 2;
+  uint64 post_id = 3;
+}
