@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/go-chi/chi/v5"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
 	comm "learning/microservice/communication/grpc"
 	"log"
 	"net/http"
@@ -24,7 +25,7 @@ func main() {
 
 	address := "localhost:50051"
 
-	conn, err := grpc.Dial(address, grpc.WithInsecure())
+	conn, err := grpc.Dial(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalln("did not connect:", err)
 	}
