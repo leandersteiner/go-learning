@@ -59,7 +59,7 @@ func main() {
 		log.Fatalln("failed to listen:", err)
 	}
 	s := grpc.NewServer()
-	comm.RegisterCommentsServer(s, CommentServer{})
+	comm.RegisterCommentsServer(s, &CommentServer{})
 
 	log.Println("Starting gRPC listener on port 50051")
 	if err := s.Serve(lis); err != nil {
