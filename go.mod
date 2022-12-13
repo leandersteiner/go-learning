@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/go-chi/chi/v5 v5.0.7
+	github.com/google/go-cmp v0.5.9
 	github.com/google/uuid v1.3.0
 	github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
 	github.com/shopspring/decimal v1.2.0

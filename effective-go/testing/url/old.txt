@@ -1,0 +1,76 @@
+goos: linux
+goarch: amd64
+pkg: learning/effective-go/testing/url
+cpu: AMD Ryzen 7 1700 Eight-Core Processor          
+BenchmarkURLString-16    	 2098383	       582.5 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2098383 times
+BenchmarkURLString-16    	 2112650	       571.0 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2112650 times
+BenchmarkURLString-16    	 2007219	       585.4 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2007219 times
+BenchmarkURLString-16    	 2127729	       558.7 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2127729 times
+BenchmarkURLString-16    	 1975718	       546.6 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 1975718 times
+BenchmarkURLString-16    	 1931476	       591.2 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 1931476 times
+BenchmarkURLString-16    	 2324067	       568.4 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2324067 times
+BenchmarkURLString-16    	 2083971	       563.8 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2083971 times
+BenchmarkURLString-16    	 1965354	       602.5 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 1965354 times
+BenchmarkURLString-16    	 2130799	       583.2 ns/op	      72 B/op	       4 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:62: Loop 1 times
+    url_test.go:62: Loop 100 times
+    url_test.go:62: Loop 10000 times
+    url_test.go:62: Loop 1000000 times
+    url_test.go:62: Loop 2130799 times
+PASS
+ok  	learning/effective-go/testing/url	17.841s
