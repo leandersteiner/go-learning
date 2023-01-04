@@ -23,3 +23,6 @@ spec:
       containers:
         - name: service-api
           image: service-amd64:1.0
+          resources:
+            limits:
+              cpu: "2000m"
