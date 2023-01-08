@@ -11,3 +11,11 @@ sudo curl -sSL \
 -o "${BIN}/buf" && \
 sudo chmod +x "${BIN}/buf"
 ```
+
+```
+oapi-codegen --config=oapi.yaml ./doc/swagger.yaml
+```
+
+```
+buf generate
+```
